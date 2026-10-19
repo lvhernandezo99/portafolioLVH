@@ -1,1 +1,106 @@
 
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Laura Hernandez | Desarrolladora Web</title>
+  <meta name="description" content="Portafolio de Laura Hernandez, desarrolladora web: proyectos con HTML5, CSS3 y JavaScript.">
+  <meta name="author" content="Laura Hernandez">
+  <meta name="theme-color" content="#F3EDE3">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#inicio">Laura Hernandez</a>
+      <button class="icon-btn" id="theme-toggle" type="button" aria-label="Cambiar a tema oscuro">◐</button>
+      <button class="icon-btn nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-list" aria-label="Abrir menú">☰</button>
+      <nav aria-label="Principal">
+        <ul class="nav-list" id="nav-list">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#sobre-mi">Sobre mí</a></li>
+          <li><a href="#proyectos">Proyectos</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <section class="hero" id="inicio" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div>
+          <h1 id="hero-title">Soy Laura Hernandez. implementando las mejores tecnologias y practicas de desarrollo web.</h1>
+          <p class="lead">Trabajo con HTML5, CSS3 y JavaScript.</p>
+          <a class="btn" href="#proyectos">Ver mis proyectos</a>
+          <a class="btn btn-outline" href="#contacto">Contactarme</a>
+        </div>
+        <figure class="hero-photo">
+          <img src="assets/images/foto-perfil.jpg" alt="Retrato de Laura Hernandez" width="320" height="320">
+        </figure>
+      </div>
+    </section>
+
+    <section class="section" id="sobre-mi" aria-labelledby="about-title">
+      <div class="container about-grid">
+        <h2 id="about-title">Sobre mí</h2>
+        <article>
+          <p>Estudiante de ingeniería de software por una gran pasión por la programación, mejorando he implementando las mejores practicas de desarrollo.</p>
+          <ul class="skills" aria-label="Habilidades">
+            <li>HTML5</li><li>CSS3</li><li>JavaScript</li><li>Git y GitHub</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="proyectos" aria-labelledby="projects-title">
+      <div class="container">
+        <h2 id="projects-title">Proyectos</h2>
+        <div class="projects-grid" id="projects-grid"></div>
+      </div>
+    </section>
+
+    <section class="section" id="contacto" aria-labelledby="contact-title">
+      <div class="container contact-wrap">
+        <h2 id="contact-title">Contacto</h2>
+        <form id="contact-form" novalidate>
+          <div class="field">
+            <label for="name">Nombre</label>
+            <input id="name" name="name" type="text" required minlength="3" autocomplete="name">
+            <small class="error" id="name-error" aria-live="polite"></small>
+          </div>
+          <div class="field">
+            <label for="email">Correo electrónico</label>
+            <input id="email" name="email" type="email" required autocomplete="email">
+            <small class="error" id="email-error" aria-live="polite"></small>
+          </div>
+          <div class="field">
+            <label for="message">Mensaje</label>
+            <textarea id="message" name="message" rows="5" required minlength="10"></textarea>
+            <small class="error" id="message-error" aria-live="polite"></small>
+          </div>
+          <button class="btn" type="submit">Enviar mensaje</button>
+          <p class="form-status" id="form-status" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year">2026</span> Laura Hernandez. Hecho con HTML, CSS y JavaScript.</p>
+    </div>
+  </footer>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
