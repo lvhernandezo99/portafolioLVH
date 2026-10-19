@@ -1,0 +1,32 @@
+
+:root {
+  /* Paleta */
+  --color-primary: #76539B;
+  --color-secondary: #287F7C;
+  --color-accent: #C77F91;
+  --bg: #F3EDE3;
+  --surface: #FCF8F1;
+  --text: #302B33;
+  --muted: #685F68;
+  --border: #D9CEC2;
+  --on-primary: #FFFFFF;
+
+  --font-heading: 'Bricolage Grotesque', system-ui, sans-serif;
+  --font-body: 'Source Sans 3', system-ui, sans-serif;
+
+  /* Escala de espacio, bordes y movimiento */
+  --space-1: .5rem; --space-2: 1rem; --space-3: 1.5rem; --space-4: 3rem; --space-5: 5rem;
+  --radius: 8px;
+  --transition: .25s ease;
+}
+[data-theme="dark"] {
+  --bg: #211C24;
+  --surface: #2B2430;
+  --text: #F1EAF2;
+  --muted: #C2B5C5;
+  --border: #493D4D;
+  --color-primary: #B99ADD;
+  --color-secondary: #7CCFC6;
+  --color-accent: #E6B6C1;
+  --on-primary: #211C24;
+}
