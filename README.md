@@ -2,7 +2,7 @@
 
 Portafolio personal de un desarrollador web, hecho para demostrar los conocimientos adquiridos: HTML5, CSS3 responsivo y JavaScript.
 
-🔗 **Sitio en vivo:** https://github.com/lvhernandezo99/portafolioLVH.git
+🔗 **Sitio en vivo:** https://lvhernandezo99.github.io/portafolioLVH/
 
 ## Descripción
 
